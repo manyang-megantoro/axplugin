@@ -23,7 +23,31 @@
  * along with axplugin. If not, see <https://www.gnu.org/licenses/gpl-2.0.html/>.
  */
 
+use Core\Axplugin;
+
 // Exit if accessed directly.
 if ( ! defined( 'ABSPATH' ) ) exit;
+
+/**
+ * Load list constanta
+ */
 require 'config.php';
+
+/**
+ * Load autoload composer
+ */
 require 'vendor/autoload.php';
+
+/**
+ * The main function to load the only instance
+ * of our master class.
+ *
+ * @author  manyang megantoro
+ * @since   1.0.0
+ * @return  object|Axapi
+ */
+function AXPLUGIN() {
+	return Axplugin::instance();
+}
+
+AXPLUGIN();
