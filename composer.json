@@ -1,0 +1,16 @@
+{
+    "name": "atapx/axplugin",
+    "description": "Boiler Wordpress Plugin",
+    "autoload": {
+        "psr-4": {
+            "Atapx\\Axplugin\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "manyang-megantoro",
+            "email": "manyang.megantoro@gmail.com"
+        }
+    ],
+    "require": {}
+}
